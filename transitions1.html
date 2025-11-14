@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        .container
+        {
+            /*border: 2px solid red;*/
+            height: 150px;
+            width: 150px;
+            margin: 200px auto;
+            position: relative;
+        }
+        .items
+        {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            position: absolute;
+            top: 0px;
+            transition: all 2s linear 0s;
+        }
+        #d1
+        {
+            background-color: red;
+        }
+        #d2
+        {
+            background-color: blue;
+        }
+        #d3
+        {
+            background-color: yellow;
+        }
+        #d4
+        {
+            background-color: green;
+        }
+        .container:hover>#d1
+        {
+            transform: translateX(300px) rotate(360deg);
+        }
+        .container:hover>#d2
+        {
+            transform: translateY(-200px) rotate(360deg);
+        }
+        .container:hover>#d3
+        {
+            transform: translateX(-300px) rotate(360deg);
+        }
+        .container:hover>#d4
+        {
+            transform: translateY(200px) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="d1"></div>
+        <div class="items" id="d2"></div>
+        <div class="items" id="d3"></div>
+        <div class="items" id="d4"></div>
+    </div>
+    
+</body>
+</html>
